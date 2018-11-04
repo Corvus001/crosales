@@ -1,0 +1,86 @@
+/* NavBar */
+.navbar {
+    align-items: center
+}
+
+/* Dashboard Boxes */
+#bio {
+    display: table;
+    background: linear-gradient(rgba(20, 20, 20, .5),
+        rgba(20, 20, 20, .5)),
+        url("../images/dash/bio.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;    
+}
+
+#blog {
+    display: table;
+    background: linear-gradient(rgba(20, 20, 20, .5),
+        rgba(20, 20, 20, .5)),
+        url("../images/dash/blog.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+#proyectos {
+    display: table;
+    background: linear-gradient(rgba(20, 20, 20, .5),
+        rgba(20, 20, 20, .5)),
+        url("../images/dash/proyectos.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+#CV {
+    display: table;
+    background: linear-gradient(rgba(20, 20, 20, .5),
+        rgba(20, 20, 20, .5)),
+        url("../images/dash/cv.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+#dash-center {
+    display: table;
+    background-image: url("../images/dash/dash-center.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+.headerTitle {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.headerTitle h2{
+    font-weight: bolder;
+}
+
+.dash-center-name {
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    font-weight: bolder;
+}
+
+/* MISC */
+hr {
+    max-width: 50px;
+    border-width: 3px;
+    border-color: #f05f40;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif
+}
+
+.section-heading {
+    margin-top: 0;
+}

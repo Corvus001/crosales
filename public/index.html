@@ -3,94 +3,147 @@
 <head>
     <title>Cristopher Rosales</title>
     <script type="text/javscript" src="bootstrap/js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="bootstrap/theme/bootstrap4-superhero.css">
+    <link rel="stylesheet" href="bootstrap/theme/bootstrap4-simplex.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor01">
+        <div class="collapse navbar-collapse" id="navbarColor03">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Bienvenido <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#dashboard">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Sobre esta página</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </nav>
-    <!-- END Navbar -->
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card mb-3">
-                    <h3 class="card-header">Who am I?</h3>
-                    <div class="card-body">
-                        <h5 class="card-title">Cristopher Rosales</h5>
-                        <h6 class="card-subtitle text-muted">25 años</h6>
+    <!-- Dashboard -->
+    <section class="bg-light" id="dashboard">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading"></h2>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <!-- Left Column -->
+            <div class="row" style="height:85vh;">
+                <div class="col-lg-3 column-box" style="height:100%; background: white">
+                    <div class="row">
+                        <div class="col-lg-12 box" id="bio" style="height: 50%">
+                            <div class="headerTitle">
+                                <h2 style="display:none">Bio</h2>
+                            </div>
+                        </div>
                     </div>
-                    <img style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_158bd1d28ef%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_158bd1d28ef%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22129.359375%22%20y%3D%2297.35%22%3EImage%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                        alt="Card image">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        2 days ago
+                    <div class="row">
+                        <div class="col-lg-12 box" id="blog" style="height: 50%">
+                            <div class="headerTitle">
+                                <h2 style="display:none">Blog</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                <!-- Center COLUMN -->
+                <div class="col-lg-6 column-box" style="height:100%; background: white">
+                    <div class="row">
+                        <div class="col-lg-12" id="dash-center" style="height: 100%">
+                            <div class="dash-center-name">
+                                <h5 style="font-weight: bolder">Cristopher Rosales</h5>
+                                <h1 style="font-weight: bolder; font-size: 50">Developer</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column -->
+                <div class="col-lg-3 column-box" style="height:100%;  background: white">
+                    <div class="row">
+                        <div class="col-lg-12 box" id="CV" style="height: 50%">
+                            <div class="headerTitle">
+                                <h2 style="display:none">CV</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 box" id="proyectos" style="height: 50%">
+                            <div class="headerTitle">
+                                <h2 style="display:none">Mis Proyectos</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                    <h2>
-                        Incipit
-                    </h2>
-                </div>
         </div>
-    </div>
-
+    </section>
+    <section class="bg-light" id="habilidades">
+        <hr class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Habilidades</h2>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1" style="visibility: visible;"></i>
+                        <h3 class="mb-3">.NET Framework</h3>
+                        <p class="text-muted mb-0">Entity Framework / C# ASP.NET MVC 4</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2" style="visibility: visible;"></i>
+                        <h3 class="mb-3">DataBases</h3>
+                        <p class="text-muted mb-0">SQL Server 2014/T-SQL / ORACLE-PLSQL / MongoDB</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-4x fa-code text-primary mb-3 sr-icon-3" style="visibility: visible;"></i>
+                        <h3 class="mb-3">Web Development</h3>
+                        <p class="text-muted mb-0">HTML-CSS-JS / D3 (Data Driven Documents) / React.JS / Node.JS </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <i class="fas fa-4x fa-heart text-primary mb-3 sr-icon-4" style="visibility: visible;"></i>
+                        <h3 class="mb-3">Machine Learning</h3>
+                        <p class="text-muted mb-0"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
