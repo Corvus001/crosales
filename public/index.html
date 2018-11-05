@@ -5,6 +5,14 @@
     <script type="text/javscript" src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/scrollreveal.js"></script>
+    <script >
+        $(function() {
+            ScrollReveal({ reset: true });
+            ScrollReveal().reveal('.dash-center-name', { delay: 1000 });
+        })
+        
+    </script>
     <!-- CSS -->
     <link rel="stylesheet" href="bootstrap/theme/bootstrap4-simplex.css">
     <link rel="stylesheet" href="css/main.css">
@@ -12,27 +20,29 @@
 
 <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarColor03">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Bienvenido <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#dashboard">Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#habilidades">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre esta página</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Inicio</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -40,53 +50,12 @@
     <header class="bg-light" id="dashboard">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading"></h2>
-                    <hr class="my-4">
-                </div>
-            </div>
-            <!-- Left Column -->
-            <div class="row">
-                <div class="col-lg-3 column-box" style="height:80vh; background: white">
-                    <div class="row">
-                        <div class="col-lg-12 box" id="bio" style="height: 50%">
-                            <div class="headerTitle">
-                                <h2 style="display:none">Bio</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12 box" id="blog" style="height: 50%">
-                            <div class="headerTitle">
-                                <h2 style="display:none">Blog</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Center COLUMN -->
-                <div class="col-lg-6 column-box" style="height:80vh; background: white">
+                <div class="col-lg-12 column-box" style="height:80vh; background: white">
                     <div class="row">
                         <div class="col-lg-12" id="dash-center" style="height: 100%">
                             <div class="dash-center-name">
-                                <h5 style="font-weight: bolder">Cristopher Rosales</h5>
+                                <h5 id ="x" style="font-weight: bolder">Cristopher Rosales</h5>
                                 <h1 style="font-weight: bolder; font-size: 50">Developer</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Right Column -->
-                <div class="col-lg-3 column-box" style="height:80vh;  background: white">
-                    <div class="row">
-                        <div class="col-lg-12 box" id="CV" style="height: 50%">
-                            <div class="headerTitle">
-                                <h2 style="display:none">CV</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12 box" id="proyectos" style="height: 50%">
-                            <div class="headerTitle">
-                                <h2 style="display:none">Mis Proyectos</h2>
                             </div>
                         </div>
                     </div>
@@ -94,6 +63,7 @@
             </div>
         </div>
     </header>
+    <!-- Section HABILIDADES -->
     <section class="bg-light" id="habilidades">
         <hr class="my-4">
         <div class="container">
@@ -131,8 +101,103 @@
                     </div>
                 </div>
             </div>
-        </div>
+            
     </section>
+    <section id="sobre-mi">
+        <hr class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Sobre mí</h2>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Datos Personales</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Cristopher Rosales</h5>
+                            <h6 class="card-subtitle text-muted">25 años</h6>
+                        </div>
+                        <img style="height: 200px; width: 100%; display: block;" src="./images/dash/cv.jpg"
+                            alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text"><i>"La tecnología es lo que me apasiona, creo que es la tecnología la que impulsa la evolución social y cultural humana en última instancia."</i></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Soltero</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's
+                                content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <iframe id="chat-frame" src="https://chat.ebd.cl:4040/" allow="microphone; camera" allowtransparency="true" style="position:fixed; right:5px; width:130px; height:80px; bottom: 0px; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
+    <script>
+        $(document).ready(function() {
+          var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+          var eventer = window[eventMethod];
+          var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+          
+          // Listen to message from child window
+          eventer(messageEvent,function(e) {
+              if (e.data == 'getBig') {
+                  if (window.innerWidth > 360) {
+                      $('#chat-frame').animate({width: '410px'}, function() {
+                          $('#chat-frame').animate({height: '66%'});
+                      });
+                  } else {
+                      $('#chat-frame').animate({width: window.innerWidth}, function() {
+                          $('#chat-frame').animate({height: '90%'});
+                      });
+                  }
+              }
+              if (e.data == 'getSmall') {
+                  $('#chat-frame').animate({height: '80px'}, function() {
+                      $('#chat-frame').animate({width: '130px'});
+                  });
+              }
+              
+              if (e.data == 'openSidebar') {
+                  $('#chat-frame').css({width: '753px'});
+              }
+              if (e.data == 'closeSidebar') {
+                  $('#chat-frame').css({width: '453px'});
+              }
+          },false);
+          var iFrame = document.getElementById('chat-frame');
+          // We attach an event listener to the window to send the size to the child each time the page changes size.
+          setInterval(function() {
+              iFrame.contentWindow.postMessage({ name: 'width', val: window.innerWidth }, "*");
+              iFrame.contentWindow.postMessage({ name: 'height', val: window.innerHeight }, "*");
+          }, 70);
+              
+      });
+      </script>
 </body>
 
-</html>
+</html> -->

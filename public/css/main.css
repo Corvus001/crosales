@@ -3,6 +3,100 @@
     align-items: center
 }
 
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+#mainNav {
+    border-bottom: 1px solid rgba(33,37,41,.1);
+    background-color: #fff;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+#mainNav .navbar-brand {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f05f40;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif
+}
+
+#mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover {
+    color: #f05f40
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #212529
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
+    color: #f05f40
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
+    color: #f05f40!important;
+    background-color: transparent
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover {
+    background-color: transparent
+}
+@media (min-width: 992px) {
+    #mainNav {
+        border-color:transparent;
+        background-color: transparent
+    }
+
+    #mainNav .navbar-brand {
+        color: rgba(255,255,255,.7)
+    }
+
+    #mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover {
+        color: #fff
+    }
+
+    #mainNav .navbar-nav>li.nav-item>a.nav-link {
+        padding: .5rem 1rem
+    }
+
+    #mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+        color: rgba(255,255,255,.7)
+    }
+
+    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
+        color: #fff
+    }
+
+    #mainNav.navbar-shrink {
+        border-bottom: 1px solid rgba(33,37,41,.1);
+        background-color: #fff
+    }
+
+    #mainNav.navbar-shrink .navbar-brand {
+        color: #f05f40
+    }
+
+    #mainNav.navbar-shrink .navbar-brand:focus,#mainNav.navbar-shrink .navbar-brand:hover {
+        color: #f05f40
+    }
+
+    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus {
+        color: #212529
+    }
+
+    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover {
+        color: #f05f40
+    }
+}
 /* Dashboard Boxes */
 #bio {
     display: table;
@@ -11,7 +105,7 @@
         url("../images/dash/bio.jpg");
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: cover;    
+    background-size: cover;
 }
 
 #blog {
@@ -23,6 +117,7 @@
     background-position: bottom center;
     background-size: cover;
 }
+
 #proyectos {
     display: table;
     background: linear-gradient(rgba(20, 20, 20, .5),
@@ -32,6 +127,7 @@
     background-position: bottom center;
     background-size: cover;
 }
+
 #CV {
     display: table;
     background: linear-gradient(rgba(20, 20, 20, .5),
@@ -41,12 +137,13 @@
     background-position: bottom center;
     background-size: cover;
 }
+
 #dash-center {
     display: table;
     background-image: url("../images/dash/dash-center.jpeg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
 }
 
 .headerTitle {
@@ -56,7 +153,7 @@
     display: table-cell;
 }
 
-.headerTitle h2{
+.headerTitle h2 {
     font-weight: bolder;
 }
 
@@ -77,8 +174,13 @@ hr {
     margin-bottom: 30px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
 }
 
 .section-heading {
