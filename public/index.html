@@ -4,15 +4,8 @@
     <title>Cristopher Rosales</title>
     <script type="text/javscript" src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/scrollreveal.js"></script>
-    <script >
-        $(function() {
-            ScrollReveal({ reset: true });
-            ScrollReveal().reveal('.dash-center-name', { delay: 1000 });
-        })
-        
-    </script>
+    <script type="text/javascript" src="js/index.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="bootstrap/theme/bootstrap4-simplex.css">
     <link rel="stylesheet" href="css/main.css">
@@ -22,7 +15,7 @@
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Inicio</a>
+            <a class="navbar-brand js-scroll-trigger" href="#dashboard">Inicio</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,10 +43,10 @@
     <header class="bg-light" id="dashboard">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 column-box" style="height:80vh; background: white">
+                <div class="col-lg-12 column-box" style="height:100vh; background: white">
                     <div class="row">
                         <div class="col-lg-12" id="dash-center" style="height: 100%">
-                            <div class="dash-center-name">
+                            <div class="dash-center-name load-hidden">
                                 <h5 id ="x" style="font-weight: bolder">Cristopher Rosales</h5>
                                 <h1 style="font-weight: bolder; font-size: 50">Developer</h1>
                             </div>
@@ -64,7 +57,7 @@
         </div>
     </header>
     <!-- Section HABILIDADES -->
-    <section class="bg-light" id="habilidades">
+    <section class="bg-light pb-5 pt-2" id="habilidades">
         <hr class="my-4">
         <div class="container">
             <div class="row">
@@ -76,28 +69,32 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center" id="skill-1">
                     <div class="service-box mt-5 mx-auto">
+                        <img class="pb-1" src="images/skills/net.png" height="200px">
                         <h3 class="mb-3">.NET Framework</h3>
                         <p class="text-muted mb-0">Entity Framework / C# ASP.NET MVC 4</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center" id="skill-2">
                     <div class="service-box mt-5 mx-auto">
+                        <img class="pb-1" src="images/skills/databases.png" height="200px">
                         <h3 class="mb-3">DataBases</h3>
                         <p class="text-muted mb-0">SQL Server 2014/T-SQL / ORACLE-PLSQL / MongoDB</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center" id="skill-3">
                     <div class="service-box mt-5 mx-auto">
+                        <img class="pb-1" src="images/skills/webdev.png" height="200px">
                         <h3 class="mb-3">Web Development</h3>
                         <p class="text-muted mb-0">HTML-CSS-JS / D3 (Data Driven Documents) / React.JS / Node.JS </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center" id="skill-4">
                     <div class="service-box mt-5 mx-auto">
+                        <img class="pb-1" src="images/skills/ml.png" height="200px">
                         <h3 class="mb-3">Machine Learning</h3>
-                        <p class="text-muted mb-0"></p>
+                        <p class="text-muted mb-0">Pandas/Numpy/SciKit Learn/MatPlotlib (still learning!)</p>
                     </div>
                 </div>
             </div>
@@ -125,32 +122,22 @@
                         <img style="height: 200px; width: 100%; display: block;" src="./images/dash/cv.jpg"
                             alt="Card image">
                         <div class="card-body">
-                            <p class="card-text"><i>"La tecnología es lo que me apasiona, creo que es la tecnología la que impulsa la evolución social y cultural humana en última instancia."</i></p>
+                            <p class="card-text"><i>"La tecnología es lo que me apasiona, creo que es la tecnología la que impulsa la evolución social y cultural humanas, en última instancia."</i></p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Soltero</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Analista Programador</li>
+                            <li class="list-group-item">2 años de experiencia</li>
+                            <li class="list-group-item">Inglés Avanzado Oral y Escrito</li>
                         </ul>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <a href="#" class="card-link">Mi CV</a>
+                            <a href="#" class="card-link">Contacto</a>
                         </div>
                         <div class="card-footer text-muted">
-                            2 days ago
+                            Noviembre 2018
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                card's
-                                content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>

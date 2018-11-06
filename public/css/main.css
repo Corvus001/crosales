@@ -1,3 +1,6 @@
+html.sr .load-hidden {
+    visibility: hidden;
+}
 /* NavBar */
 .navbar {
     align-items: center
@@ -14,7 +17,7 @@
 }
 #mainNav {
     border-bottom: 1px solid rgba(33,37,41,.1);
-    background-color: #fff;
+    background-color: transparent;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     -webkit-transition: all .2s;
     transition: all .2s
@@ -23,27 +26,27 @@
 #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: #f05f40;
+    color: #4078f0;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif
 }
 
 #mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover {
-    color: #f05f40
+    color: #4078f0
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
     font-size: .9rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #212529
+    color: #4b4e50
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
-    color: #f05f40
+    color: #4078f0
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
-    color: #f05f40!important;
+    color: #4078f0!important;
     background-color: transparent
 }
 
@@ -51,11 +54,13 @@
     background-color: transparent
 }
 @media (min-width: 992px) {
+    #mainNav.bg-navbar-scrolled {
+        background-color: #fff;
+    }
     #mainNav {
         border-color:transparent;
         background-color: transparent
     }
-
     #mainNav .navbar-brand {
         color: rgba(255,255,255,.7)
     }
@@ -74,28 +79,11 @@
 
     #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
         color: #fff
-    }
-
-    #mainNav.navbar-shrink {
-        border-bottom: 1px solid rgba(33,37,41,.1);
-        background-color: #fff
-    }
-
-    #mainNav.navbar-shrink .navbar-brand {
-        color: #f05f40
-    }
-
-    #mainNav.navbar-shrink .navbar-brand:focus,#mainNav.navbar-shrink .navbar-brand:hover {
-        color: #f05f40
-    }
-
-    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus {
-        color: #212529
-    }
-
-    #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover {
-        color: #f05f40
-    }
+    }    
+    #mainNav .scrolled-nav-link {
+        color: #4078f0 !important;
+    } 
+    
 }
 /* Dashboard Boxes */
 #bio {
@@ -140,7 +128,7 @@
 
 #dash-center {
     display: table;
-    background-image: url("../images/dash/dash-center.jpeg");
+    background-image: url("../images/dash/dash-center-alt.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -169,7 +157,7 @@
 hr {
     max-width: 50px;
     border-width: 3px;
-    border-color: #f05f40;
+    border-color: #4078f0;
     margin-top: 30px;
     margin-bottom: 30px;
 }
