@@ -1,19 +1,29 @@
 $(function () {
     //NavBar 
-    
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         $('#mainNav').toggleClass('bg-navbar-scrolled', $(this).scrollTop() > 500)
         $('.js-scroll-trigger').toggleClass('scrolled-nav-link', $(this).scrollTop() > 500)
     });
 
-
     // ScrollReveal
-    ScrollReveal({ reset: true });
-    ScrollReveal().reveal('.dash-center-name', { delay: 500 });
-    ScrollReveal().reveal('#skill-1', { delay: 200 });
-    ScrollReveal().reveal('#skill-2', { delay: 400 });
-    ScrollReveal().reveal('#skill-3', { delay: 600 });
-    ScrollReveal().reveal('#skill-4', { delay: 800 });
+    ScrollReveal({
+        reset: true
+    });
+    ScrollReveal().reveal('.dash-center-name', {
+        delay: 500
+    });
+    ScrollReveal().reveal('#skill-1', {
+        delay: 200
+    });
+    ScrollReveal().reveal('#skill-2', {
+        delay: 400
+    });
+    ScrollReveal().reveal('#skill-3', {
+        delay: 600
+    });
+    ScrollReveal().reveal('#skill-4', {
+        delay: 800
+    });
     // Scroll Smooth
     $('a[href*="#"]') // Select all links with #
         // Remove links that don't actually link to anything
@@ -22,8 +32,7 @@ $(function () {
         .click(function (event) {
             // On-page links
             if (
-                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                &&
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
                 location.hostname == this.hostname
             ) {
                 // Figure out element to scroll to
@@ -50,5 +59,9 @@ $(function () {
                 }
             }
         });
-});
+    
+    $('.portfolio-box-caption').on('mouseenter', function() {
+        $('this').css('opacity', 1);
+    })
 
+});

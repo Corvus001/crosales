@@ -2,8 +2,9 @@
 
 <head>
     <title>Cristopher Rosales</title>
-    <script type="text/javscript" src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javscript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="js/scrollreveal.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <!-- CSS -->
@@ -26,13 +27,16 @@
                         <a class="nav-link js-scroll-trigger" href="#habilidades">Habilidades</a>
                     </li>
                     <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#portafolio">Portafolio</a>
+                        </li>
+                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#sobre-mi">Sobre mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portafolio</a>
+                        <a class="nav-link js-scroll-trigger" href="#esta-pagina">Esta Página</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
+                        <a class="nav-link js-scroll-trigger" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -48,7 +52,7 @@
                         <div class="col-lg-12" id="dash-center" style="height: 100%">
                             <div class="dash-center-name load-hidden">
                                 <h5 id ="x" style="font-weight: bolder">Cristopher Rosales</h5>
-                                <h1 style="font-weight: bolder; font-size: 50">Developer</h1>
+                                <h1>Developer</h1>
                             </div>
                         </div>
                     </div>
@@ -57,9 +61,9 @@
         </div>
     </header>
     <!-- Section HABILIDADES -->
-    <section class="bg-light pb-5 pt-2" id="habilidades">
+    <section class="pb-5 pt-2" id="habilidades" style="background-color:#4078f015">
         <hr class="my-4">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Habilidades</h2>
@@ -67,40 +71,81 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="habilidades-container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center" id="skill-1">
-                    <div class="service-box mt-5 mx-auto">
+                    <div class="skill-box mt-5 mx-auto">
                         <img class="pb-1" src="images/skills/net.png" height="200px">
-                        <h3 class="mb-3">.NET Framework</h3>
+                        <h3 class="mb-3 habilidad">.NET Framework</h3>
                         <p class="text-muted mb-0">Entity Framework / C# ASP.NET MVC 4</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center" id="skill-2">
-                    <div class="service-box mt-5 mx-auto">
+                    <div class="skill-box mt-5 mx-auto">
                         <img class="pb-1" src="images/skills/databases.png" height="200px">
-                        <h3 class="mb-3">DataBases</h3>
+                        <h3 class="mb-3 habilidad">DataBases</h3>
                         <p class="text-muted mb-0">SQL Server 2014/T-SQL / ORACLE-PLSQL / MongoDB</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center" id="skill-3">
-                    <div class="service-box mt-5 mx-auto">
+                    <div class="skill-box mt-5 mx-auto">
                         <img class="pb-1" src="images/skills/webdev.png" height="200px">
-                        <h3 class="mb-3">Web Development</h3>
+                        <h3 class="mb-3 habilidad">Web Development</h3>
                         <p class="text-muted mb-0">HTML-CSS-JS / D3 (Data Driven Documents) / React.JS / Node.JS </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center" id="skill-4">
-                    <div class="service-box mt-5 mx-auto">
+                    <div class="skill-box mt-5 mx-auto">
                         <img class="pb-1" src="images/skills/ml.png" height="200px">
-                        <h3 class="mb-3">Machine Learning</h3>
+                        <h3 class="mb-3 habilidad">Machine Learning</h3>
                         <p class="text-muted mb-0">Pandas/Numpy/SciKit Learn/MatPlotlib (still learning!)</p>
                     </div>
                 </div>
             </div>
             
     </section>
-    <section id="sobre-mi">
+    <!-- Section PORTAFOLIO -->
+    <section class="bg-light pb-5 pt-2" id="portafolio">
+            <hr class="my-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Portafolio</h2>
+                        <hr class="my-4">
+                    </div>
+                </div>
+            </div>
+            <div class="container p-0" id="portafolio-dash">
+                <div class="row no-gutters" >
+                  <div class="col-lg-6 col-sm-6">
+                    <a class="portfolio-box" href="#portafolio">
+                      <img class="img-fluid" src="./images/dash/blog.jpg" alt="">
+                      <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                          <div class="project-name">
+                            Dashboard
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-sm-6">
+                    <a class="portfolio-box" href="#portafolio">
+                      <img class="img-fluid"  src="./images/dash/blog.jpg" alt="">
+                      <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                          <div class="project-name">
+                            ChatBot
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        </section>
+    <!-- Section SOBRE MI -->
+    <section class="bg-light pb-5 pt-2" id="sobre-mi">
         <hr class="my-4">
         <div class="container">
             <div class="row">
@@ -119,7 +164,7 @@
                             <h5 class="card-title">Cristopher Rosales</h5>
                             <h6 class="card-subtitle text-muted">25 años</h6>
                         </div>
-                        <img style="height: 200px; width: 100%; display: block;" src="./images/dash/cv.jpg"
+                        <img style="height: 200px; width: 300px; margin: auto; display: block;" src="./images/dash/cv.jpg"
                             alt="Card image">
                         <div class="card-body">
                             <p class="card-text"><i>"La tecnología es lo que me apasiona, creo que es la tecnología la que impulsa la evolución social y cultural humanas, en última instancia."</i></p>
@@ -136,13 +181,78 @@
                         <div class="card-footer text-muted">
                             Noviembre 2018
                         </div>
+                    </div>  
+                </div>
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1" style="margin:auto">¿Por qué esta página?</h5>
+                            </div>
+                            <p class="mb-1"></p>
+                        </div>
+                        <div href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Mostrar mis capacidades</h5>
+                            </div>
+                            <p class="mb-1" style="text-align: justify">Existe una gran cantidad de desarrolladores con distintas habilidades y backgrounds. 
+                                Siempre he considerado que a diferencia de otras profesiones, la computación tiende a ser bastante meritocrática.
+                            Éste portal es una muestra general de mis capacidades, sirve a modo de presentación personal, como portafolio y como medio de contacto.</p>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
     </section>
+    <!-- Section ESTA PAGINA -->
+    <section class="bg-light pb-5 pt-2" id="esta-pagina">
+        <hr class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Esta Página</h2>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="img-fluid" style="max-height:400px;display:block; margin:auto" src="./images/thisp.jpg">
+                </div>
+                <div class="col-lg-8 arquitectura">
+                    <div class="card border-info mb-3 arquitectura">
+                            <div class="card-header">Arquitectura</div>
+                            <div class="card-body">
+                              <p class="mb-1" style="color: #444; text-align:justify">Esta página está montada sobre un servidor HTTP corriendo sobre
+                                    Node.JS, en los servidores de Heroku, cuyo código y despliege fue realizado
+                                    enteramente por mi. En el back-end usé ExpressJS como framework para montar un servidor HTTP sirviendo
+                                    contenido estático, no require base de datos.
+                                    Por otro lado, en el front-end usé Bootstrap 4 y tomé ideas prestadas de otras páginas de
+                                    desarrolladores y plantillas de Bootstrap, aunque la totalidad del código en
+                                    JavaScript, CSS y HTML lo escribí 'a mano'.</p>
+                            </div>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section CONTACTO -->
+    <!-- Section PORTAFOLIO -->
+    <section class="bg-light pb-5 pt-2" id="contacto">
+            <hr class="my-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Contacto</h2>
+                        <hr class="my-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- CHAT -->
     <iframe id="chat-frame" src="https://chat.ebd.cl:4040/" allow="microphone; camera" allowtransparency="true" style="position:fixed; right:5px; width:130px; height:80px; bottom: 0px; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
     <script>
         $(document).ready(function() {
