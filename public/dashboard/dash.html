@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script type="text/javscript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="/dashboard/d3.js"></script>
+    <script type="text/javascript" src="/dashboard/gaugeAtencion.js"></script>
+    <link rel="stylesheet" href="/dashboard/dash.css">
+    <link rel="stylesheet" href="bootstrap/theme/bootstrap4-simplex.css">
+    <script>
+        $(function () {
+            gaugeNivelAtencion("87.5", "85.1", "95")
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid" id="fondo-dashboard">
+        <div class="row">
+            <div class="col-lg-3 box" id="nivel_atencion">
+                <svg width="100%" height="200" id="gauge_atencion" class="caja" style="display:block;margin:auto;">
+                    <rect width="100%" height="100%" rx="15" ry="15"></rect>
+                </svg>
+            </div>
+            <div class="col-lg-3 box" id="grafico_tmo">
+                <svg width="100%" height="200" id="tmo" class="caja" style="display:block;margin:auto;">
+                    <rect width="100%" height="100%" rx="15" ry="15"></rect>
+                </svg>
+            </div>
+            <div class="col-lg-3 box" id="nivel_servicio">
+                <svg width="100%" height="200" id="gauge_servicio" class="caja" style="display:block;margin:auto;">
+                    <rect width="100%" height="100%" rx="15" ry="15"></rect>
+                </svg>
+            </div>
+            <div class="col-lg-3 box" id="grafico_espera">
+                <svg width="100%" height="200" id="tiempo_espera" class="caja" style="display:block;margin:auto;">
+                    <rect width="100%" height="100%" rx="15" ry="15"></rect>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

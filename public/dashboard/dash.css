@@ -1,0 +1,19 @@
+.box {
+    padding: 4px;
+}
+
+.caja {
+    fill: #fff;
+}
+
+svg {
+    font-family: Open Sans;
+}
+
+svg text {
+    fill: #000;
+}
+
+#fondo-dashboard {
+    background-color: #cacaca;
+}

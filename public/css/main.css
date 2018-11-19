@@ -1,3 +1,26 @@
+/* ABOUT ME STYLING */
+.about-me-header {
+    font: 20 15px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid rgb(103, 109, 192);
+}
+.about-me-p {
+    font: 20 12px/1.5 Helvetica, Verdana, sans-serif;
+}
+/* LIST STYLING */
+ul.skill-list {
+    list-style-type: none;
+    /* padding: 0; */
+  }
+   
+.skill-list li {
+    font: 20 12px/1.5 Helvetica, Verdana, sans-serif;
+    /* border-bottom: 1px solid #ccc; */
+  }
+   
+.skill-header {
+    font: 20 15px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid rgb(103, 109, 192);
+}
 /* RESPONSIVE SECTION HEADINGS */
 @media (max-width: 992px) {
     .section-heading {
