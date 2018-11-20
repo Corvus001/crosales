@@ -57,12 +57,12 @@ html.sr .load-hidden {
 #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: #4078f0;
+    color: #8EA604;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif
 }
 
 #mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover {
-    color: #4078f0
+    color: #8EA604
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
@@ -73,11 +73,11 @@ html.sr .load-hidden {
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
-    color: #4078f0
+    color: #8EA604
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
-    color: #4078f0!important;
+    color: #8EA604!important;
     background-color: transparent
 }
 
@@ -112,7 +112,7 @@ html.sr .load-hidden {
         color: #fff
     }    
     #mainNav .scrolled-nav-link {
-        color: #4078f0 !important;
+        color: #8EA604 !important;
     } 
 }
 
@@ -203,7 +203,7 @@ html.sr .load-hidden {
     font-weight: bold;
     opacity: 0;
     color: #fff;
-    background: #4078f0a8;
+    background: #8EA604a8;
     -webkit-transition: all .2s;
     transition: all .2s;
 }
@@ -216,7 +216,7 @@ html.sr .load-hidden {
     .portfolio-box .portfolio-box-caption {
         opacity: 1;
         color: #fff;
-        background: #4078f000;
+        background: #8EA60400;
         font-size: 300%;
     }
     #portafolio-dash {
@@ -243,7 +243,7 @@ html.sr .load-hidden {
 hr {
     max-width: 50px;
     border-width: 3px;
-    border-color: #4078f0;
+    border-color: #8EA604;
     margin-top: 30px;
     margin-bottom: 30px;
 }

@@ -6,18 +6,47 @@
     <script type="text/javscript" src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="/dashboard/d3.js"></script>
-    <script type="text/javascript" src="/dashboard/gaugeAtencion.js"></script>
-    <link rel="stylesheet" href="/dashboard/dash.css">
+    <script type="text/javascript" src="/dashboard/graficos/gaugeAtencion.js"></script>
+    <script type="text/javascript" src="/dashboard/graficos/gaugeNivelAtencion.js"></script>
+    <script type="text/javascript" src="/dashboard/graficos/LineasAbandono.js"></script>
+    <script type="text/javascript" src="/dashboard/graficos/TMO.js"></script>
+    <script type="text/javascript" src="/dashboard/graficos/TiempoEspera.js"></script>
+    <script type="text/javascript" src="/dashboard/graficos/gaugeServicio.js"></script>
+    <script type="text/javascript" src="/dashboard/graficos/TortaLLamadosPorCola.js"></script>
+    <script type="text/javascript" src="/dashboard/graficos/LineasRecibidas.js"></script>
+
     <link rel="stylesheet" href="bootstrap/theme/bootstrap4-simplex.css">
+    <link rel="stylesheet" href="/dashboard/dash.css">
     <script>
         $(function () {
-            gaugeNivelAtencion("87.5", "85.1", "95")
+            gaugeNivelAtencion("87.5", "85.1", "95");
+            TMOUA([], 400, 400);
+            TiempoDeEspera([], 345);
+            gaugeNivelServicio("65.6", "70.2", "85");
+            daedalus12([]);
+            graficoLineasAbandono([], [], "Porcentaje de Abandonos en Cola");
+            graficoLineasRecibidas([], "Llamadas Recibidas");
         });
     </script>
 </head>
 
 <body>
-    <div class="container-fluid" id="fondo-dashboard">
+    
+    <nav class="navbar mb-5 navbar-expand-lg navbar-light fixed-top bg-navbar-scrolled" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger scrolled-nav-link" href="#frontpage">Volver</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            </div>
+        </div>
+    </nav>
+    <!-- =============== DASHBOARD =============== -->
+    <br>
+    <br>
+    <h4>Ejemplo de Dashboard de Contact Center</h4>
+    <div class="container" id="fondo-dashboard">
         <div class="row">
             <div class="col-lg-3 box" id="nivel_atencion">
                 <svg width="100%" height="200" id="gauge_atencion" class="caja" style="display:block;margin:auto;">
@@ -40,6 +69,30 @@
                 </svg>
             </div>
         </div>
+        <div class="row">
+                <div class="col-lg-6 box" id="grafico_colas">
+                    <svg width="100%" height="400" id="torta_colas" class="caja" style="display:block;margin:auto;">
+                        <rect width="100%" height="100%" rx="15" ry="15"></rect>
+                    </svg>
+        
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="row box">
+                        <div class="col-lg-12 box" id="grafico_abandono">
+                            <svg width="100%" height="193" id="abandono_anual" class="caja" style="display:block;margin:auto;">
+                                <rect width="100%" height="100%" rx="15" ry="15"></rect>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 box" id="grafico_recibidas">
+                            <svg width="100%" height="193" id="recibidas_anual" class="caja" style="display:block;margin:auto;">
+                                <rect width="100%" height="100%" rx="15" ry="15"></rect>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 </body>
 
