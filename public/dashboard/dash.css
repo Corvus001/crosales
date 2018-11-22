@@ -16,6 +16,7 @@ svg text {
 
 #fondo-dashboard {
     background-color: rgb(37, 37, 37);
+    margin-top: 60px;
 }
 
 #dashboard-nav {
