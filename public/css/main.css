@@ -1,6 +1,25 @@
+
+
+#habilidades {
+    background: rgb(238, 243, 255);
+}
+#arquitectura {
+    font-size: 1.3em;
+    font-weight: bolder;
+    background-color: #4075EF;
+    color: #fff;
+}
+#sobre-mi-tab {
+    overflow-y: auto;
+    max-height: 764px;
+}
+#sobre-mi-tab p {
+    font-size: 1.1em;
+    padding-right: 20px;
+}
 /* ABOUT ME STYLING */
 .about-me-header {
-    font: 20 15px/1.5 Helvetica, Verdana, sans-serif;
+    font: 20 20px/1.6 Helvetica, Verdana, sans-serif;
     border-bottom: 1px solid rgb(103, 109, 192);
 }
 .about-me-p {
@@ -21,12 +40,7 @@ ul.skill-list {
     font: 20 15px/1.5 Helvetica, Verdana, sans-serif;
     border-bottom: 1px solid rgb(103, 109, 192);
 }
-/* RESPONSIVE SECTION HEADINGS */
-@media (max-width: 992px) {
-    .section-heading {
-        font-size: 500%;
-    }
-}
+
 
 /* SCROLLREVEAL */
 html.sr .load-hidden {
@@ -57,12 +71,12 @@ html.sr .load-hidden {
 #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: #8EA604;
+    color: #6153CC;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif
 }
 
 #mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover {
-    color: #8EA604
+    color: #6153CC
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
@@ -73,58 +87,18 @@ html.sr .load-hidden {
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
-    color: #8EA604
+    color: #6153CC
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
-    color: #8EA604!important;
+    color: #6153CC!important;
     background-color: transparent
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover {
     background-color: transparent
 }
-@media (min-width: 992px) {
-    #mainNav.bg-navbar-scrolled {
-        background-color: #fff;
-    }
-    #mainNav {
-        border-color:transparent;
-        background-color: transparent
-    }
-    #mainNav .navbar-brand {
-        color: rgba(255,255,255,.7)
-    }
 
-    #mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover {
-        color: #fff
-    }
-
-    #mainNav .navbar-nav>li.nav-item>a.nav-link {
-        padding: .5rem 1rem
-    }
-
-    #mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
-        color: rgba(255,255,255,.7)
-    }
-
-    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
-        color: #fff
-    }    
-    #mainNav .scrolled-nav-link {
-        color: #8EA604 !important;
-    } 
-}
-
-@media (max-width: 992px) {
-    #mainNav {
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
-    .navbar-toggler {
-        padding: 1.5em 2.5em;
-    }
-}
 /* INICIO */
 #dash-center {
     display: table;
@@ -149,31 +123,7 @@ html.sr .load-hidden {
     font-weight: bolder;
 }
 
-@media (max-width: 992px) {
-    .dash-center-name h1{
-        font-size: 8em;
-    }
-    .dash-center-name h5 {
-        font-size: 2em;
-    }
-}
 
-/* HABILIDADES */
-@media (max-width: 992px) {
-
-    .habilidad {
-        font-size: 400%;
-    }
-    .habilidad p {
-        font-size: 350%;
-    }
-    .skill-box p {
-        font-size: 250%;
-    }
-    #habilidades-container {
-        max-width: 97%;
-    }
-}
 
 /* PORTAFOLIO */
 .portfolio-box {
@@ -182,6 +132,7 @@ html.sr .load-hidden {
     max-width: 650px;
     margin: 0 auto;
 }
+
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
     position: absolute;
@@ -203,7 +154,7 @@ html.sr .load-hidden {
     font-weight: bold;
     opacity: 0;
     color: #fff;
-    background: #8EA604a8;
+    background: #6153CCa8;
     -webkit-transition: all .2s;
     transition: all .2s;
 }
@@ -212,18 +163,6 @@ html.sr .load-hidden {
     opacity: 1;
 }
 
-@media (max-width: 992px) {
-    .portfolio-box .portfolio-box-caption {
-        opacity: 1;
-        color: #fff;
-        background: #8EA60400;
-        font-size: 300%;
-    }
-    #portafolio-dash {
-        flex: 0 0 100%;
-        max-width: unset;
-    }
-}
 
 
 /* SOBRE MI */
@@ -234,16 +173,12 @@ html.sr .load-hidden {
     text-align: center;
 }
 
-
-
-
-
 /* MISC */
 
 hr {
     max-width: 50px;
     border-width: 3px;
-    border-color: #8EA604;
+    border-color: #6153CC;
     margin-top: 30px;
     margin-bottom: 30px;
 }

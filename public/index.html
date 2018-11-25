@@ -7,9 +7,12 @@
     <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="js/scrollreveal.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/typer.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="bootstrap/theme/bootstrap4-simplex.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/experimental.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
@@ -27,17 +30,17 @@
                         <a class="nav-link js-scroll-trigger" href="#habilidades">Habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#sobre-mi">Sobre mí</a>
+                        <a class="nav-link js-scroll-trigger" href="#esta-pagina">Esta Página</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#esta-pagina">Esta Página</a>
+                        <a class="nav-link js-scroll-trigger" href="#sobre-mi">Sobre mí</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#portafolio">Portafolio</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contacto">Contacto</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -50,9 +53,9 @@
                 <div class="col-lg-12 column-box" style="height:100vh; background: white">
                     <div class="row">
                         <div class="col-lg-12" id="dash-center" style="height: 100%">
-                            <div class="dash-center-name load-hidden">
+                            <div class="dash-center-name load-hidden typewriter">
                                 <h5 id="x" style="font-weight: bolder">Cristopher Rosales</h5>
-                                <h1>Developer</h1>
+                                <h1 id="typewriter"></h1>
                             </div>
                         </div>
                     </div>
@@ -61,7 +64,7 @@
         </div>
     </header>
     <!-- Section HABILIDADES -->
-    <section class="pb-5 pt-2" id="habilidades" style="background-color:#4078f015">
+    <section class="pb-5 pt-2" id="habilidades">
         <hr class="my-4">
         <div class="container-fluid">
             <div class="row">
@@ -104,187 +107,6 @@
             </div>
 
     </section>
-    <!-- Section SOBRE MI -->
-    <section class="bg-light pb-5 pt-2" id="sobre-mi">
-        <hr class="my-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Sobre mí</h2>
-                    <hr class="my-4">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card mb-3">
-                        <h3 class="card-header">Datos Personales</h3>
-                        <div class="card-body">
-                            <h5 class="card-title">Cristopher Rosales</h5>
-                            <h6 class="card-subtitle text-muted">25 años</h6>
-                        </div>
-                        <img style="height: 200px; width: 300px; margin: auto; display: block;" src="./images/dash/cv.jpg"
-                            alt="Card image">
-                        <div class="card-body">
-                            <p class="card-text"><i>"La tecnología es lo que me apasiona, creo que es la tecnología la
-                                    que impulsa la evolución social y cultural humanas, en última instancia."</i></p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Analista Programador</li>
-                            <li class="list-group-item">2 años de experiencia</li>
-                            <li class="list-group-item">Inglés Avanzado Oral y Escrito</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Mi CV</a>
-                            <a href="#" class="card-link">Contacto</a>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Noviembre 2018
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <!-- tabs -->
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active show" data-toggle="tab" href="#conocimientos">Conocimientos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#sobre-mi-tab">Sobre mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#"></a>
-                        </li>
-                    </ul>
-                    <div id="myTabContent" class="tab-content">
-                        <div class="tab-pane fade active show" id="conocimientos">
-                            <br>
-                            <h6 class="skill-header">Front End</h6>
-                            <ul class="skill-list">
-                                <li>HTML / CSS</li>
-                                <li>Javascript</li>
-                                <li>Bootstrap</li>
-                                <li>DataTables</li>
-                                <li>SVG</li>
-                                <li>D3 (Data Driven Documents)</li>
-                                <li>React</li>
-                                <li>Jquery</li>
-                                <li>AJAX</li>
-                                <li>WebSockets</li>
-                            </ul>
-                            <h6 class="skill-header">Back End</h6>
-                            <ul class="skill-list">
-                                <li>Asp.NET MVC</li>
-                                <li>.NET Framework >4.5.1</li>
-                                <li>Node.JS</li>
-                                <li>Express.JS</li>
-                                <li>Entity Framework</li>
-                                <li>LINQ Queries</li>
-                            </ul>
-                            <h6 class="skill-header">Databases</h6>
-                            <ul class="skill-list">
-                                <li>PL-SQL (a little rusty but ok)</li>
-                                <li>TSQL (very fresh and advanced)</li>
-                                <li>SQL Server >2014 </li>
-                                <li>MongoDB</li>
-                            </ul>
-                            <h6 class="skill-header">Machine Learning & Deep Learning</h6>
-                            <ul class="skill-list">
-                                <li>Pandas / SciKit Learn / Numpy</li>
-                                <li>TensorFlow</li>
-                                <li>Regression and Classification Tasks with (so far) Educational Datasets</li>
-                            </ul>
-                            <h6 class="skill-header">Extras</h6>
-                            <ul class="skill-list">
-                                <li>Genesis InfoMart (GIM) DataModel v8.5.X (SPs, custom reports, etc)</li>
-                                <li>React-Native for Mobile Development (Still Learning)</li>
-                                <li>Research and Development</li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane fade" id="sobre-mi-tab">
-                            <br>
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1 about-me-header">Investigación</h5>
-                            </div>
-                            <p class="mb-1 about-me-p" style="text-align: justify">
-                                Casi la totalidad de mis conocimientos han sido adquiridos de forma autodidacta.
-                                Vivimos en la era de la información;
-                                Internet constituye el mayor repositorio de conocimientos de la historia de la
-                                humanidad, y la única barrera que impide
-                                que accedamos a educarnos de una forma más completa y vasta que cualquier generación
-                                anterior es el tiempo y la disciplina.
-                            </p>
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1 about-me-header">Disciplina</h5>
-                            </div>
-                            <p class="mb-1 about-me-p" style="text-align: justify">
-                                He trabajado desde los 18 años para poder aprender a controlarme a mí mismo y ser capaz
-                                de trabajar sin supervisión,
-                                sin estructuras, sin que haya un marco disciplinario externo que me oblige a cumplir
-                                ciertos plazos, o seguir determinadas
-                                pautas. A los 18 decidí ahorrarle el dinero a mis padres y prepararme para la PSU sin
-                                preuniversitario. Tuve que aprender a
-                                obligarme a estudiar todos los días, y empecé a proponerme metas específicas que
-                                cumplir diariamente. Por ejemplo,
-                                hacer un ensayo PSU al día, todos los días. Logré entrar a Ingeniería en la Universidad
-                                de Chile y desde ahí me di
-                                cuenta de que el mayor obstáculo para cumplir mis sueños eran mis propias debilidades.
-                                Y más importante que eso, me di
-                                cuenta de que es posible aprender o hacer casi cualquier cosa si uno tiene la
-                                disposición de buscar información y trabajar
-                                por ello haciendo progresos incrementales.
-                            </p>
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1 about-me-header">Innovación</h5>
-                            </div>
-                            <p class="mb-1 about-me-p" style="text-align: justify">
-                                Durante mi adolescencia me consideraba a mí mismo un humanista, me dediqué gran parte
-                                de esa época a leer y tocar piano,
-                                consideraba que mi objetivo debía ser aumentar el bienestar humano, y en mi afán por
-                                entender la historia de la humanidad,
-                                y comprender el abanico de culturas del mundo, estuve mucho tiempo estudiando
-                                diversidad de temas, desde mitología hasta
-                                sociedades secretas, desde la masonería hasta la poesía de Rimbaud, desde las pinturas
-                                negras de Goya hasta el Islam, desde
-                                la alquimia hasta Teilhard de Chardin.
-                            </p>
-                            <p class="mb-1 about-me-p" style="text-align: justify">
-                                Hacia el final de la enseñanza media ocurrieron dos cosas que terminaron poniendo a un
-                                humanista a estudiar ingeniería.
-                                Por un lado, tuve una especie de pérdida de fé en la capacidad del humanismo para
-                                llegar a todos los rincones de la tierra.
-                                Siempre hay barreras de cultura, de religión, o simplemente de idioma que impedían que
-                                las ideas penetraran realmente en
-                                todos los oídos. Por otro lado cayó en mis manos un libro publicado en 1960 llamado <i>Le
-                                    matin des Magiciens</i> (El retorno de los brujos).
-                                Este libro sumado a mi crisis personal terminaron revelandome una proposición en la
-                                cual a día de hoy aún creo: Los verdaderos
-                                protagonistas de los cambios en la forma de vida y en la cultura de los pueblos no son
-                                los poetas, ni los políticos, ni los filosofos...
-                                Son los ingenieros y científicos.
-                            </p>
-                            <p class="mb-1 about-me-p" style="text-align: justify">
-                                Desde el momento en que un individuo ha descubierto una nueva configuración de la
-                                materia que mejore la calidad de vida de
-                                las personas, ésta inmediatamente se ha propagado por todo el mundo, o han aparecido
-                                manifestaciones de ella al unísono en
-                                diferentes lugares. El fuego, la rueda, la brújula... Son estos hitos los que realmente
-                                han empujado cambios sociológicos
-                                de gran escala y permanentes.
-                            </p>
-                            <p class="mb-1 about-me-p" style="text-align: justify">
-                                Por estas razones creo que el progreso tecnológico es la verdadera fuente del aumento del
-                                bienestar humano, pero más importante, es lo que nos permite y obliga a alcanzar mayor madurez
-                                psicológica, pues es necesaria para estar a la altura del poder que la tecnología nos otorga.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
     <!-- Section ESTA PAGINA -->
     <section class="bg-light pb-5 pt-2" id="esta-pagina">
         <hr class="my-4">
@@ -296,50 +118,222 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <!--  -->
+        <!-- <img class="img-fluid" style="max-height:250px;display:block; margin:auto" src="./images/thisp.jpg"> -->
+        <div class="container-fluid" id="arquitectura">
             <div class="row">
-                <div class="col-lg-4">
-                    <img class="img-fluid" style="max-height:400px;display:block; margin:auto" src="./images/thisp.jpg">
-                </div>
-                <div class="col-lg-8 arquitectura">
-                    <div class="card border-info mb-3 arquitectura">
-                        <div class="card-header">Arquitectura</div>
-                        <div class="card-body">
-                            <p style="text-align: justify">Esta página está montada sobre un
-                                servidor HTTP corriendo sobre
-                                Node.JS, en los servidores de Heroku, cuyo código y despliege fue realizado
-                                enteramente por mi. En el back-end usé ExpressJS como framework para montar un servidor
-                                HTTP sirviendo
-                                contenido estático, no require base de datos.
-                                Por otro lado, en el front-end usé Bootstrap 4 y tomé ideas prestadas de otras páginas
-                                de
-                                desarrolladores y plantillas de Bootstrap, aunque la totalidad del código en
-                                JavaScript, CSS y HTML lo escribí 'a mano', sin uso de Frameworks.
-                            </p>
-                            <p style="text-align: justify">
-                                Adicionalmente, se puede acceder a un sistema de Chat diseñado y montado entéramente por mí,
-                                usando en principio Socket.io, DialogFlow, plataforma de Google en la nube para procesamiento
-                                de lenguaje natural, y una arquitectura basada en la idea de ser Plug & Play para el cliente, 
-                                es decir, para montar este sistema de chatbot, el cliente solo necesita incluir en su página 
-                                un script de menos de 20 líneas, tener Jquery, y agregar un iFrame que apunte a mi servidor.
-                            </p>
-                            <p style="text-align: justify">
-                                Las respuestas del Bot son personalisables, y además es capaz de consultar APIs o Bases de Datos
-                                externas. 
-                            </p>
-                            <p style="text-align: justify">
-                                Finalmente, puedes pedirle al bot contactar conmigo, y te permitirá enviarme un mensaje que 
-                                me llegará instantáneamente a mi Smartphone. Toda la arquitectura y documentación de este sistema
-                                la puedes revisar en la sección <a href="#portafolio">Portafolio</a>, donde podrás comprobar
-                                mis conocimientos del sistema y la forma en que lo construí.   
-                            </p>
-
-                        </div>
-                    </div>
+                <div class="col-lg-8 p-5 offset-lg-2 css-typing" id="typer-arquitectura" >
+                    <!-- <h3 class="pb-5" style="text-align: center; font-weight: bolder;">Arquitectura</h3>
+                    <p style="text-align: justify">Esta página está montada sobre un
+                        servidor HTTP corriendo sobre
+                        Node.JS, en los servidores de Heroku, cuyo código y despliege fue realizado
+                        enteramente por mi. En el back-end usé ExpressJS como framework para montar un servidor
+                        HTTP sirviendo
+                        contenido estático, no require base de datos.
+                        Por otro lado, en el front-end usé Bootstrap 4 y tomé ideas prestadas de otras páginas
+                        de
+                        desarrolladores y plantillas de Bootstrap, aunque la totalidad del código en
+                        JavaScript, CSS y HTML lo escribí 'a mano', sin uso de Frameworks.
+                    </p>
+                    <p style="text-align: justify">
+                        Adicionalmente, se puede acceder a un sistema de Chat diseñado y montado entéramente por mí,
+                        usando en principio Socket.io, DialogFlow, plataforma de Google en la nube para procesamiento
+                        de lenguaje natural, y una arquitectura basada en la idea de ser Plug & Play para el cliente, 
+                        es decir, para montar este sistema de chatbot, el cliente solo necesita incluir en su página 
+                        un script de menos de 20 líneas, tener Jquery, y agregar un iFrame que apunte a mi servidor.
+                    </p>
+                    <p style="text-align: justify">
+                        Las respuestas del Bot son personalisables, y además es capaz de consultar APIs o Bases de Datos
+                        externas. 
+                    </p>
+                    <p style="text-align: justify">
+                        Finalmente, puedes pedirle al bot contactar conmigo, y te permitirá enviarme un mensaje que 
+                        me llegará instantáneamente a mi Smartphone. Toda la arquitectura y documentación de este sistema
+                        la puedes revisar en la sección Portafolio, donde podrás comprobar
+                        mis conocimientos del sistema y la forma en que lo construí.   
+                    </p> -->
                 </div>
             </div>
         </div>
     </section>
+    <!-- Section SOBRE MI -->
+    <section class="bg-light pb-5 pt-2" id="sobre-mi">
+            <hr class="my-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Sobre mí</h2>
+                        <hr class="my-4">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 offset-lg-2">
+                        <div class="card mb-3">
+                            <h3 class="card-header">Datos Personales</h3>
+                            <div class="card-body">
+                                <h5 class="card-title">Cristopher Rosales</h5>
+                                <h6 class="card-subtitle text-muted">25 años</h6>
+                            </div>
+                            <img style="height: 250px; width: 200px; margin: auto; display: block;" src="./images/dash/proyectos.jpg"
+                                alt="Card image">
+                            <div class="card-body">
+                                <p class="card-text"><i>"La tecnología es lo que me apasiona, creo que es la tecnología la
+                                        que impulsa la evolución social y cultural humanas, en última instancia."</i></p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Analista Programador</li>
+                                <li class="list-group-item">1 año de experiencia</li>
+                                <li class="list-group-item">Inglés Avanzado</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Mi CV</a>
+                                <a href="#" class="card-link">Contacto</a>
+                            </div>
+                            <div class="card-footer text-muted">
+                                Noviembre 2018
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" id="pestañas-sobre-mi">
+                        <!-- tabs -->
+                        <ul class="nav nav-tabs" id="pestañas">
+                            <li class="nav-item">
+                                <a class="nav-link active show" data-toggle="tab" href="#sobre-mi-tab">Sobre mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#conocimientos">Conocimientos</a>
+                            </li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                            <div class="tab-pane fade" id="conocimientos">
+                                <br>
+                                <h6 class="skill-header">Front End</h6>
+                                <ul class="skill-list">
+                                    <li>HTML / CSS</li>
+                                    <li>Javascript</li>
+                                    <li>Bootstrap</li>
+                                    <li>DataTables</li>
+                                    <li>SVG</li>
+                                    <li>D3 (Data Driven Documents)</li>
+                                    <li>React</li>
+                                    <li>Jquery</li>
+                                    <li>AJAX</li>
+                                    <li>WebSockets</li>
+                                </ul>
+                                <h6 class="skill-header">Back End</h6>
+                                <ul class="skill-list">
+                                    <li>Asp.NET MVC</li>
+                                    <li>.NET Framework >4.5.1</li>
+                                    <li>Node.JS</li>
+                                    <li>Express.JS</li>
+                                    <li>Entity Framework</li>
+                                    <li>LINQ Queries</li>
+                                </ul>
+                                <h6 class="skill-header">Databases</h6>
+                                <ul class="skill-list">
+                                    <li>PL-SQL (a little rusty but ok)</li>
+                                    <li>TSQL (very fresh and advanced)</li>
+                                    <li>SQL Server >2014 </li>
+                                    <li>MongoDB</li>
+                                </ul>
+                                <h6 class="skill-header">Machine Learning & Deep Learning</h6>
+                                <ul class="skill-list">
+                                    <li>Pandas / SciKit Learn / Numpy</li>
+                                    <li>TensorFlow</li>
+                                    <li>Regression and Classification Tasks with (so far) Educational Datasets</li>
+                                </ul>
+                                <h6 class="skill-header">Extras</h6>
+                                <ul class="skill-list">
+                                    <li>Genesis InfoMart (GIM) DataModel v8.5.X (SPs, custom reports, etc)</li>
+                                    <li>React-Native for Mobile Development (Still Learning)</li>
+                                    <li>Research and Development</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade active show" id="sobre-mi-tab">
+                                <br>
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1 about-me-header">Investigación</h5>
+                                </div>
+                                <p class="mb-1 about-me-p" style="text-align: justify">
+                                    Casi la totalidad de mis conocimientos han sido adquiridos de forma autodidacta.
+                                    Vivimos en la era de la información;
+                                    Internet constituye el mayor repositorio de conocimientos de la historia de la
+                                    humanidad, y la única barrera que impide
+                                    que accedamos a educarnos de una forma más completa y vasta que cualquier generación
+                                    anterior es el tiempo y la disciplina.
+                                </p>
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1 about-me-header">Disciplina</h5>
+                                </div>
+                                <p class="mb-1 about-me-p" style="text-align: justify">
+                                    He trabajado desde los 18 años para poder aprender a controlarme a mí mismo y ser capaz
+                                    de trabajar sin supervisión,
+                                    sin estructuras, sin que haya un marco disciplinario externo que me oblige a cumplir
+                                    ciertos plazos, o seguir determinadas
+                                    pautas. A los 18 decidí ahorrarle el dinero a mis padres y prepararme para la PSU sin
+                                    preuniversitario. Tuve que aprender a
+                                    obligarme a estudiar todos los días, y empecé a proponerme metas específicas que
+                                    cumplir diariamente. Por ejemplo,
+                                    hacer un ensayo PSU al día, todos los días. Logré entrar a Ingeniería en la Universidad
+                                    de Chile y desde ahí me di
+                                    cuenta de que el mayor obstáculo para cumplir mis sueños eran mis propias debilidades.
+                                    Y más importante que eso, me di
+                                    cuenta de que es posible aprender o hacer casi cualquier cosa si uno tiene la
+                                    disposición de buscar información y trabajar
+                                    por ello haciendo progresos incrementales.
+                                </p>
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1 about-me-header">Innovación</h5>
+                                </div>
+                                <p class="mb-1 about-me-p" style="text-align: justify">
+                                    Durante mi adolescencia me consideraba a mí mismo un humanista, me dediqué gran parte
+                                    de esa época a leer y tocar piano,
+                                    consideraba que mi objetivo debía ser aumentar el bienestar humano, y en mi afán por
+                                    entender la historia de la humanidad,
+                                    y comprender el abanico de culturas del mundo, estuve mucho tiempo estudiando
+                                    diversidad de temas, desde mitología hasta
+                                    sociedades secretas, desde la masonería hasta la poesía de Rimbaud, desde las pinturas
+                                    negras de Goya hasta el Islam, desde
+                                    la alquimia hasta Teilhard de Chardin.
+                                </p>
+                                <p class="mb-1 about-me-p" style="text-align: justify">
+                                    Hacia el final de la enseñanza media ocurrieron dos cosas que terminaron poniendo a un
+                                    humanista a estudiar ingeniería.
+                                    Por un lado, tuve una especie de pérdida de fé en la capacidad del humanismo para
+                                    llegar a todos los rincones de la tierra.
+                                    Siempre hay barreras de cultura, de religión, o simplemente de idioma que impedían que
+                                    las ideas penetraran realmente en
+                                    todos los oídos. Por otro lado cayó en mis manos un libro publicado en 1960 llamado <i>Le
+                                        matin des Magiciens</i> (El retorno de los brujos).
+                                    Este libro sumado a mi crisis personal terminaron revelandome una proposición en la
+                                    cual a día de hoy aún creo: Los verdaderos
+                                    protagonistas de los cambios en la forma de vida y en la cultura de los pueblos no son
+                                    los poetas, ni los políticos, ni los filosofos...
+                                    Son los ingenieros y científicos.
+                                </p>
+                                <p class="mb-1 about-me-p" style="text-align: justify">
+                                    Desde el momento en que un individuo ha descubierto una nueva configuración de la
+                                    materia que mejore la calidad de vida de
+                                    las personas, ésta inmediatamente se ha propagado por todo el mundo, o han aparecido
+                                    manifestaciones de ella al unísono en
+                                    diferentes lugares. El fuego, la rueda, la brújula... Son estos hitos los que realmente
+                                    han empujado cambios sociológicos
+                                    de gran escala y permanentes.
+                                </p>
+                                <p class="mb-1 about-me-p" style="text-align: justify">
+                                    Por estas razones creo que el progreso tecnológico es la verdadera fuente del aumento del
+                                    bienestar humano, pero más importante, es lo que nos permite y obliga a alcanzar mayor madurez
+                                    psicológica, pues es necesaria para estar a la altura del poder que la tecnología nos otorga.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
     <!-- Section PORTAFOLIO -->
     <section class="bg-light pb-5 pt-2" id="portafolio">
         <hr class="my-4">
@@ -355,7 +349,7 @@
             <div class="row no-gutters">
                 <div class="col-lg-6 col-sm-6">
                     <a class="portfolio-box" href="/Dashboard">
-                        <img class="img-fluid" src="./images/dash/blog.jpg" alt="">
+                        <img class="img-fluid" src="./images/Untitled.jpg" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
@@ -367,7 +361,7 @@
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <a class="portfolio-box" href="#portafolio">
-                        <img class="img-fluid" src="./images/dash/blog.jpg" alt="">
+                        <img class="img-fluid" src="./images/Untitled2.jpg" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
@@ -381,7 +375,7 @@
         </div>
     </section>
     <!-- Section CONTACTO -->
-    <section class="bg-light pb-5 pt-2" id="contacto">
+    <!-- <section class="bg-light pb-5 pt-2" id="contacto">
         <hr class="my-4">
         <div class="container">
             <div class="row">
@@ -391,10 +385,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- CHAT -->
-    <iframe id="chat-frame" src="https://crosales-chatserver.herokuapp.com/" allow="microphone; camera"
+    <iframe id="chat-frame" src="http://localhost:5000/" allow="microphone; camera"
         allowtransparency="true" style="position:fixed; right:5px; width:130px; height:80px; bottom: 0px; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
     <script>
         $(document).ready(function () {

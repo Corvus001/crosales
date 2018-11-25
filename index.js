@@ -2,7 +2,7 @@
 const express = require('express');
 const http = require('http');
 const https = require('https');
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 const path = require('path');
 // ================ SERVER ==================
 const app = express();

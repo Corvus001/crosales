@@ -1,0 +1,90 @@
+/* RESPONSIVE SECTION HEADINGS */
+@media (max-width: 992px) {
+    .section-heading {
+        font-size: 500%;
+    }
+}
+
+@media (min-width: 992px) {
+    #mainNav.bg-navbar-scrolled {
+        background-color: #fff;
+    }
+    #mainNav {
+        border-color:transparent;
+        background-color: transparent
+    }
+    #mainNav .navbar-brand {
+        color: rgba(255,255,255,.7)
+    }
+
+    #mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover {
+        color: #fff
+    }
+
+    #mainNav .navbar-nav>li.nav-item>a.nav-link {
+        padding: .5rem 1rem
+    }
+
+    #mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+        color: rgba(255,255,255,.7)
+    }
+
+    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
+        color: #fff
+    }    
+    #mainNav .scrolled-nav-link {
+        color: #8EA604 !important;
+    } 
+}
+
+@media (max-width: 992px) {
+    #mainNav {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .navbar-toggler {
+        padding: 1.5em 2.5em;
+    }
+}
+
+@media (max-width: 992px) {
+    .dash-center-name h1{
+        font-size: 8em;
+    }
+    .dash-center-name h5 {
+        font-size: 2em;
+    }
+}
+
+/* HABILIDADES */
+@media (max-width: 992px) {
+
+    .habilidad {
+        font-size: 400%;
+    }
+    .habilidad p {
+        font-size: 350%;
+    }
+    .skill-box p {
+        font-size: 250%;
+    }
+    #habilidades-container {
+        max-width: 97%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .portfolio-box .portfolio-box-caption {
+        opacity: 1;
+        color:#fff;
+        font-size: 300%;
+    }
+    /* .portfolio-box img {
+        opacity: 0.5;
+    } */
+    #portafolio-dash {
+        flex: 0 0 100%;
+        max-width: unset;
+    }
+}
